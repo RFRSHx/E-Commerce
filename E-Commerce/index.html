@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-Machina</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.svg" width="64px" height="64px" class="logo" alt="Logo EX-Machina">
+        </a>
+
+        <div>
+            <table>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li id="bag">
+                        <div class="shopping-elements">
+                            <img class="shopping-cart-icon" src="img/icons/shopping-cart.png" width="24px" height="24px" alt="Shopping cart">
+                            <div class="fly-item"><span class="item-element">0</span></div>
+                            <div class="icon-text">
+                                <div class="total-title">Total</div>
+                                <div class="cart-total">€0</div>
+                            </div>
+                        </div>
+                    </li>
+                    <a href="#" id="close">
+                        <img src="img/icons/close.png" width="24px" alt="">
+                    </a>
+                </ul>
+            </table>
+        </div>
+
+        <div id="mobile">
+            <div class="shopping-elements">
+                <img class="mobile-cart-icon" src="img/icons/shopping-cart.png" width="24px" height="24px" alt="Shopping cart">
+                <div class="mobile-fly fly-item"><span class="mobile-item-element">0</span></div>
+                <div class="icon-text">
+                    <div class="total-title">Total</div>
+                    <div class="mobile-cart-total">€0</div>
+                </div>
+            </div>
+            <img id="bar" class="cart-icon" src="img/icons/menu.png" width="24px" alt="Menu icon">
+        </div>
+
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+
+            </div>
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">€0</div>
+                </div>
+                
+                <a style="text-decoration: none;" href="checkout.html"><button type="button" class="btn-checkout">Checkout</button></a>
+
+                <img src="img/icons/close.png" width="16px" alt="Close icon" id="close-cart">
+
+            
+        </div>
+
+
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="search-bar">
+            <form>
+                <img src="img/icons/loupe.png" width="24px" alt="Loupe for searching bar">
+                <input type="text" id="search-item" placeholder="Search..." onkeyup="search()">
+            </form>
+        </div>
+
+        <div class="buttons">
+            <button class="grid-view view-btn active-btn" onclick="Button(0); Grid();">
+                <img src="img/icons/grid.png" width="24px" alt="Grid view image">
+            </button>
+            <button class="list-view view-btn" onclick="Button(1); List();">
+                <img src="img/icons/list.png" width="24px" alt="List view image">
+            </button>
+        </div>
+        
+        <h2>Featured Products</h2>
+        <div class="prod-container" id="product-list">
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" onclick="window.location.href='single.html';" src="img/products/airpods-max.jpeg" alt="AirPods Max">
+                    <span>Apple</span>
+                    <h5 class="product-title">AirPods Max</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/half-star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;429.99</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/airpods.jpeg" alt="AirPods">
+                    <span>Apple</span>
+                    <h5 class="product-title">AirPods</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/empty.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;239.90</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/apple-watch.jpg" alt="Apple Watch">
+                    <span>Apple</span>
+                    <h5 class="product-title">Apple Watch</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/half-star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;379.79</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/ipad-air.jpeg" alt="iPad Air">
+                    <span>Apple</span>
+                    <h5 class="product-title">iPad Air</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;779.90</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/ipad-mini.jpeg" alt="iPad Mini">
+                    <span>Apple</span>
+                    <h5 class="product-title">iPad Mini</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/half-star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;629.30</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/iphone.jpeg" alt="iPhone">
+                    <span>Apple</span>
+                    <h5 class="product-title">iPhone</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;929.90</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/mac-studio.jpeg" alt="Mac Studio">
+                    <span>Apple</span>
+                    <h5 class="product-title">Mac Studio</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/empty.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;3569.95</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+            <div class="prod">
+                
+                <div class="description">
+                    <img class="prod-img" src="img/products/macbook.jpeg" alt="MacBook Pro image">
+                    <span>Apple</span>
+                    <h5 class="product-title">MacBook Pro</h5>
+                    <div class="star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                        <img src="img/star/star.png" width="16px" alt="Rating star">
+                    </div>
+                    <h4 class="price">&euro;2729.99</h4>
+                    <img class="cart-btn" src="img/icons/add-to-cart.png" width="40px" alt="Add to cart icon">
+                </div>
+                    
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="col contact">
+            <img class="logo" src="img/logo.svg" width="64px" height="64px" alt="Logo EX-Machina">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Lugano, Svizzera</p>
+            <p><strong>Phone:</strong> +41 91 971 34 20</p>
+            <p><strong>Working hours:</strong> 09:00-18:00, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <img src="img/icons/facebook.png" width="24px" height="24px" alt="Facebook icon">
+                    <img src="img/icons/instagram.png" width="24px" height="24px" alt="Instagram icon">
+                    <img src="img/icons/twitter.png" width="24px" height="24px" alt="Twitter icon">
+                </div>
+            </div>
+        </div>
+
+        <div class="col about">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app-store-badge.png" height="64px" alt="App Store Badge">
+                <img src="img/google-play-badge.png" height="64px" alt="Google Play Badge">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2023 Sergiu Cetulean </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-Machina</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="index.html">
+            <img src="img/logo.svg" width="64px" height="64px" class="logo" alt="Logo EX-Machina">
+        </a>
+
+        <div>
+            <table>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li id="bag">
+                            <img class="shopping-cart-icon" src="img/icons/shopping-cart.png" width="24px" height="24px" alt="Shopping cart">
+                    </li>
+                    <a href="#" id="close">
+                        <img src="img/icons/close.png" width="24px" alt="">
+                    </a>
+                </ul>
+            </table>
+        </div>
+
+        <div id="mobile">
+            <img class="mobile-cart-icon" src="img/icons/shopping-cart.png" width="24px" height="24px" alt="Shopping cart">
+            <img id="bar" class="cart-icon" src="img/icons/menu.png" width="24px" alt="Menu icon">
+        </div>
+
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+
+            </div>
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">€0</div>
+                </div>
+                
+                <a style="text-decoration: none;" href="checkout.html"><button type="button" class="btn-checkout">Checkout</button></a>
+
+                <img src="img/icons/close.png" width="16px" alt="Close icon" id="close-cart">
+
+            
+        </div>
+
+
+    </section>
+
+    <section id="single-prod" class="section-p1">
+        <div class="single-prod-img">
+            <img src="img/products/airpods-max.jpeg" width="100%" id="main-img" alt="AirPod Max image">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/airpods-max.jpeg" width="100%" class="small-img prodImg" alt="AidPods Max">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/airpods-max2.jpeg" width="100%" class="small-img" alt="AidPods Max">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/airpods-max3.jpeg" width="100%" class="small-img" alt="AidPods Max">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/airpods-max.jpeg" width="100%" class="small-img" alt="AidPods Max">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-prod-details">
+            <h6>Home/ Headphones</h6>
+            <h4 class="product-title">AirPods Max</h4>
+            <h2 class="price">€429.99</h2>
+
+            <button class="normal-btn cart-btn"> Add to cart</button>
+            <h4>Product details</h4>
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quis ducimus quos a natus id necessitatibus nesciunt reprehenderit fugit officiis quam, dolores officia, vero aliquam distinctio mollitia magnam autem! Blanditiis!
+            </span>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="col contact">
+            <img class="logo" src="img/logo.svg" width="64px" height="64px" alt="Logo EX-Machina">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Lugano, Svizzera</p>
+            <p><strong>Phone:</strong> +41 91 971 34 20</p>
+            <p><strong>Working hours:</strong> 09:00-18:00, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <img src="img/icons/facebook.png" width="24px" height="24px" alt="Facebook icon">
+                    <img src="img/icons/instagram.png" width="24px" height="24px" alt="Instagram icon">
+                    <img src="img/icons/twitter.png" width="24px" height="24px" alt="Twitter icon">
+                </div>
+            </div>
+        </div>
+
+        <div class="col about">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app-store-badge.png" height="64px" alt="App Store Badge">
+                <img src="img/google-play-badge.png" height="64px" alt="Google Play Badge">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2023 Sergiu Cetulean </p>
+        </div>
+    </footer>
+
+    <script >
+        var MainImg = document.getElementById("main-img");
+        var simg = document.getElementsByClassName("small-img");
+
+        simg[0].onclick = function(){
+            MainImg.src = simg[0].src;
+        }
+
+        simg[1].onclick = function(){
+            MainImg.src = simg[1].src;
+        }
+
+        simg[2].onclick = function(){
+            MainImg.src = simg[2].src;
+        }
+
+        simg[3].onclick = function(){
+            MainImg.src = simg[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
